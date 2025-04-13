@@ -14,7 +14,7 @@ const edit = btnsEdit => {
                 container[1].setAttribute("contenteditable", "");
                 container[2].setAttribute("contenteditable", "");
                 container[3].setAttribute("contenteditable", "");
-            }else{
+            }else{  
                 container[1].removeAttribute("contenteditable");
                 container[2].removeAttribute("contenteditable");
                 container[3].removeAttribute("contenteditable");
