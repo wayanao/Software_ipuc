@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+div, li, a, button, body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 0 0;
+}
+
+#name{ 
+    font-size: 1.1rem;
+    padding: 5px 30px;
+    border: 0;
+    border-bottom: 1px solid #26c;
+    border-radius: 15px;
+    box-shadow: 2px 0 0 #15a5;
+    width: clamp(300px, 40vw, 500px);
+}
+
+#name:focus{
+    outline: 0;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: clamp(300px, 50vw,400px);
+}
+
+.btn{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #26c;
+    color: #26c;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .27s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #26c;
+    color: #aef;
+    scale: 1.05;
+}
+
+
+/*  Edit zone  */
+
+.info_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.info_wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info_container{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-column: span 5;
+    grid-template-columns: subgrid;
+    justify-content: space-around;
+    width: clamp(600px, 100vw, 1000px);
+}
+
+.img_profile{
+    width: 4.25rem;
+    border-radius: 50%;
+    justify-self: end;
+    margin-bottom: 20px;
+}
+
+.title{
+    color: #123;
+    font-weight: 600;
+}
+
+.data{
+    color: #999;
+}
+
+.state{
+    font-weight: 600;
+    padding: 5px 6px;
+    border-radius: 25px;
+}
+
+.active{
+    color: #162;
+    background-color: #6e7;
+}
+
+.inactive{
+    color: #611;
+    background-color: #f45;
+}
+
+div:has(>.btn_edit){
+    width: fit-content;
+    justify-content: left;
+}
+
+.btn_edit{
+    font-size: 1rem !important;
+    margin-right: 5px;
+}
+
+.btn_delete{
+    font-size: 1rem !important;
+}
+
